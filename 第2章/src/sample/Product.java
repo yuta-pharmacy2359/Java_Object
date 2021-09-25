@@ -58,4 +58,19 @@ public class Product {
 		this.stock = stock;
 	}
 
+	public int totalPrice(int quantity) {
+		int total = price * quantity;
+		return total;
+	}
+	
+	public boolean isHighPrice(int p) {
+		return price > p;
+	}
+	
+	@Override
+	public String toString() {
+		return "Product [number=" + number + ", name=" + name + ", price=" + price + ", date=" + date + ", stock="
+				+ stock + "]";
+	}
+
 }
